@@ -32,7 +32,7 @@ stress.
               Try It Free For 30 Days
             </button>
             <button className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold text-lg border-2 border-blue-600 hover:bg-blue-50 transition-all duration-200 shadow-md hover:shadow-lg w-full sm:w-auto">
-              Hear Sefid Answer A Real Call
+              Hear Sefid Answer a Real Call
             </button>
           </div>
 
