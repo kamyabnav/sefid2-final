@@ -16,7 +16,9 @@ export default function Offer() {
         </h2>
 
         <p className="text-2xl mb-8 text-blue-100">
-          Just cover call costs (usually under $30)
+          No setup fee. No commitment. No changes to your current phone system.
+If it doesn't make your front desk faster and calmer in 30 days, walk away
+no questions asked.
         </p>
 
         <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-8 border border-white/20">
