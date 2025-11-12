@@ -20,7 +20,10 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl sm:text-2xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Our AI phone assistant answers, books, and reschedules patients automatically — saving your staff hours every week.
+            Patients call with the same questions every day. Our Al receptionist
+answers them instantly, books and reschedules appointments, and
+connects to your existing phone number - no new hardware, no setup
+stress.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
