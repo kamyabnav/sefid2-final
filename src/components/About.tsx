@@ -16,7 +16,7 @@ export default function About() {
         <div className="bg-white rounded-2xl shadow-xl p-10 border border-slate-200">
           <p className="text-xl text-slate-700 leading-relaxed mb-6">
             We built this after seeing how many clinics lose patients simply because no one could pick up the
-phone fast enough. Our goal isn't to replace receptionists - it's to free them from repetitive, stressful
+phone fast enough. Our goal isn't to replace receptionists, it's to free them from repetitive, stressful
 calls so they can focus on what matters: patient care.
           </p>
           <p className="text-xl text-slate-700 leading-relaxed">
