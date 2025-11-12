@@ -5,20 +5,20 @@ export default function HowItWorks() {
     {
       icon: Cable,
       number: "1",
-      title: "We connect to your existing phone number",
+      title: "We connect to your existing phone number.",
       description: "No new hardware needed. Keep your current setup.",
     },
     {
       icon: Bot,
       number: "2",
-      title: "AI answers calls + books directly into your calendar",
-      description: "Seamless scheduling with your existing system",
+      title: "Al answers calls, books directly into your calendar or CRM.",
+      description: "Seamless scheduling with your existing system.",
     },
     {
       icon: BarChart3,
       number: "3",
       title: "You monitor results on a dashboard",
-      description: "Full visibility into every call and booking",
+      description: "No hidden data, no tricks. Full transparency.",
     },
   ];
 
