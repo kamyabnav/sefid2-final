@@ -12,7 +12,7 @@ export default function Offer() {
         </div>
 
         <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-          Try it 100% Free for One Month
+          See It in Action, Free for 30 Days.
         </h2>
 
         <p className="text-2xl mb-8 text-blue-100">
