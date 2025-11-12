@@ -17,6 +17,7 @@ export default function Offer() {
 
         <p className="text-2xl mb-8 text-blue-100">
           No setup fee. No commitment. No changes to your current phone system.
+          
 If it doesn't make your front desk faster and calmer in 30 days, walk away
 no questions asked.
         </p>
