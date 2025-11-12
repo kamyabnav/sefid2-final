@@ -9,10 +9,9 @@ export default function Solution() {
             Meet Your 24/7 Receptionist
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-4">
-            Our AI phone assistant handles calls, answers patient questions, books and reschedules appointments, and updates your calendar — automatically.
-          </p>
-          <p className="text-lg text-slate-700 max-w-3xl mx-auto font-medium">
-            It's like adding another receptionist, but one that works 24/7, never gets tired, and costs a fraction of the price.
+            Your Al receptionist is trained specifically for your clinic - it knows your hours, services,
+insurance policies, and how you like things handled. It can collect key info like name, healthcare
+number, and insurance details, and store them neatly in your dashboard or CRM.
           </p>
         </div>
 
