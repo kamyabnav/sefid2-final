@@ -37,7 +37,7 @@ stress.
           </div>
 
           <p className="text-sm text-slate-500 max-w-md mx-auto">
-            Works with your existing phone number and system — no setup stress.
+            No Commitment, Cancel Anytime.
           </p>
         </div>
 
