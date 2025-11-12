@@ -6,7 +6,7 @@ export default function HowItWorks() {
       icon: Cable,
       number: "1",
       title: "We connect to your existing phone number",
-      description: "Quick integration with no disruption to your current setup",
+      description: "No new hardware needed. Keep your current setup.",
     },
     {
       icon: Bot,
