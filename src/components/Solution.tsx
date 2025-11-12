@@ -46,7 +46,7 @@ number, and insurance details, and store them neatly in your dashboard or CRM.
                 <div className="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
                   <Calendar className="w-10 h-10 text-green-600" />
                 </div>
-                <p className="text-lg font-semibold text-slate-900">Appointment Booked</p>
+                <p className="text-lg font-semibold text-slate-900">Info captured + Appointment booked</p>
                 <p className="text-sm text-slate-500 mt-1">Calendar updated instantly</p>
               </div>
             </div>
