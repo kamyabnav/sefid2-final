@@ -4,7 +4,7 @@ export default function Problem() {
   const problems = [
     {
       icon: Users,
-      text: "Receptionists get swamped with repetitive calls",
+      text: "Receptionists get answering the same questions again and again",
     },
     {
       icon: PhoneOff,
@@ -12,11 +12,11 @@ export default function Problem() {
     },
     {
       icon: Clock,
-      text: "Calls after hours never get answered",
+      text: "After hours calls go to voicemail and never get returned",
     },
     {
       icon: DollarSign,
-      text: "Hiring and training new staff costs thousands",
+      text: "Hiring and training new staff costs thousands per year",
     },
   ];
 
