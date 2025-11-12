@@ -17,7 +17,7 @@ export default function FinalCTA() {
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <button className="group px-10 py-5 bg-white text-slate-900 rounded-xl font-bold text-lg hover:bg-slate-100 transition-all duration-200 shadow-2xl hover:shadow-3xl flex items-center gap-3 w-full sm:w-auto justify-center">
             <Play className="w-6 h-6 group-hover:scale-110 transition-transform" />
-            Watch Demo
+            Talk to Sefid
           </button>
           <button className="px-10 py-5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl font-bold text-lg hover:from-blue-700 hover:to-cyan-700 transition-all duration-200 shadow-2xl hover:shadow-3xl flex items-center gap-3 w-full sm:w-auto justify-center">
             <MessageSquare className="w-6 h-6" />
