@@ -1,6 +1,22 @@
-import { Phone, Play } from 'lucide-react';
+import { Phone, Play } from "lucide-react";
+import { VapiWidget } from "@vapi-ai/client-sdk-react";
 
 export default function Hero() {
+  const handleOpenWidget = () => {
+    // VapiWidget renders this structure:
+    // .vapi-widget-wrapper > div (fixed) > div (the clickable CTA)
+    const cta = document.querySelector(
+      ".vapi-widget-wrapper > div > div"
+    ) as HTMLElement | null;
+
+    if (!cta) {
+      console.warn("Vapi widget CTA not found");
+      return;
+    }
+
+    cta.click(); // simulate click on the floating button
+  };
+
   return (
     <section className="relative bg-gradient-to-br from-slate-50 to-blue-50 overflow-hidden">
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10" />
@@ -13,17 +29,18 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
-            Never Miss Another<br />
+            Never Miss Another
+            <br />
             <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
               Patient Call
             </span>
           </h1>
 
           <p className="text-xl sm:text-2xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Patients call with the same questions every day. Our Al receptionist
-answers them instantly, books and reschedules appointments, and
-connects to your existing phone number, no new hardware, no setup
-stress.
+            Patients call with the same questions every day. Our AI receptionist
+            answers them instantly, books and reschedules appointments, and
+            connects to your existing phone number, no new hardware, no setup
+            stress.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
@@ -31,18 +48,15 @@ stress.
               <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
               Try It Free For 30 Days
             </button>
+
             <button
-  onClick={() => {
-    const widget = document.querySelector("vapi-widget");
-    widget?.open();
-  }}
-  className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold text-lg border-2 border-blue-600 hover:bg-blue-50 transition-all duration-200 shadow-md hover:shadow-lg w-full sm:w-auto"
->
-  Hear Sefid Answer a Real Call
-</button>
+              onClick={handleOpenWidget}
+              className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold text-lg border-2 border-blue-600 hover:bg-blue-50 transition-all duration-200 shadow-md hover:shadow-lg w-full sm:w-auto"
+            >
+              Hear Sefid Answer a Real Call
+            </button>
           </div>
 
-          
           <p className="text-sm text-slate-500 max-w-md mx-auto">
             No Commitment, Cancel Anytime.
           </p>
@@ -57,7 +71,9 @@ stress.
                 <div className="w-3 h-3 rounded-full bg-yellow-400" />
                 <div className="w-3 h-3 rounded-full bg-green-400" />
               </div>
-              <div className="text-sm text-slate-600 font-medium">AI Call in Progress...</div>
+              <div className="text-sm text-slate-600 font-medium">
+                AI Call in Progress...
+              </div>
             </div>
             <div className="space-y-4">
               <div className="flex gap-3">
@@ -66,14 +82,20 @@ stress.
                 </div>
                 <div className="flex-1">
                   <div className="bg-slate-100 rounded-2xl rounded-tl-none px-4 py-3">
-                    <p className="text-slate-700">"Hi, I'd like to schedule a cleaning appointment for next week."</p>
+                    <p className="text-slate-700">
+                      "Hi, I'd like to schedule a cleaning appointment for next
+                      week."
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="flex gap-3 justify-end">
                 <div className="flex-1 max-w-lg">
                   <div className="bg-blue-600 text-white rounded-2xl rounded-tr-none px-4 py-3">
-                    <p>"Of course! I have availability on Tuesday at 2 PM or Wednesday at 10 AM. Which works better for you?"</p>
+                    <p>
+                      "Of course! I have availability on Tuesday at 2 PM or
+                      Wednesday at 10 AM. Which works better for you?"
+                    </p>
                   </div>
                 </div>
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center flex-shrink-0">
@@ -85,10 +107,13 @@ stress.
         </div>
       </div>
 
-      <vapi-widget
-  assistant-id="e14476a7-2ac3-4ac5-9bad-aa947947fbc7"
-  public-key="0f230ff6-8bb2-435a-bce1-9c2979788a83"
-></vapi-widget>
+      {/* Vapi widget (React version) */}
+      <VapiWidget
+        publicKey="0f230ff6-8bb2-435a-bce1-9c2979788a83"
+        assistantId="e14476a7-2ac3-4ac5-9bad-aa947947fbc7"
+        mode="voice"
+        title="Talk with Sefid"
+      />
     </section>
   );
 }
