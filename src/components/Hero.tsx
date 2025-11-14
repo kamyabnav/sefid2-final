@@ -26,35 +26,21 @@ connects to your existing phone number, no new hardware, no setup
 stress.
           </p>
 
-<div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-  <button className="group px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold text-lg hover:bg-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center gap-2 w-full sm:w-auto justify-center">
-    <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
-    Try It Free For 30 Days
-  </button>
-
-  <button
-    onClick={() => {
-      const widget = document.querySelector("vapi-widget");
-      widget?.open();
-    }}
-    className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold text-lg border-2 border-blue-600 hover:bg-blue-50 transition-all duration-200 shadow-md hover:shadow-lg w-full sm:w-auto"
-  >
-    Hear Sefid Answer a Real Call
-  </button>
-</div>
-
-
-declare namespace JSX {
-  interface IntrinsicElements {
-    "vapi-widget": any;
-  }
-}
-
-<vapi-widget
-  assistant-id="e14476a7-2ac3-4ac5-9bad-aa947947fbc7"
-  public-key="0f230ff6-8bb2-435a-bce1-9c2979788a83"
-></vapi-widget>
-
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+            <button className="group px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold text-lg hover:bg-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center gap-2 w-full sm:w-auto justify-center">
+              <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              Try It Free For 30 Days
+            </button>
+            <button
+  onClick={() => {
+    const widget = document.querySelector("vapi-widget");
+    widget?.open();
+  }}
+  className="px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold text-lg border-2 border-blue-600 hover:bg-blue-50 transition-all duration-200 shadow-md hover:shadow-lg w-full sm:w-auto"
+>
+  Hear Sefid Answer a Real Call
+</button>
+          </div>
 
           
           <p className="text-sm text-slate-500 max-w-md mx-auto">
@@ -98,6 +84,11 @@ declare namespace JSX {
           </div>
         </div>
       </div>
+
+      <vapi-widget
+  assistant-id="e14476a7-2ac3-4ac5-9bad-aa947947fbc7"
+  public-key="0f230ff6-8bb2-435a-bce1-9c2979788a83"
+></vapi-widget>
     </section>
   );
 }
