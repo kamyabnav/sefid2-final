@@ -34,6 +34,7 @@ export default function Hero() {
             <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
               Patient Call
             </span>
+            Even After Hours
           </h1>
 
           <p className="text-xl sm:text-2xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed">
