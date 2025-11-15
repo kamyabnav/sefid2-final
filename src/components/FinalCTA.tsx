@@ -1,6 +1,23 @@
 import { Play, MessageSquare } from 'lucide-react';
+import { VapiWidget } from "@vapi-ai/client-sdk-react";
 
 export default function FinalCTA() {
+
+    const handleOpenWidget = () => {
+    // VapiWidget renders this structure:
+    // .vapi-widget-wrapper > div (fixed) > div (the clickable CTA)
+    const cta = document.querySelector(
+      ".vapi-widget-wrapper > div > div"
+    ) as HTMLElement | null;
+
+    if (!cta) {
+      console.warn("Vapi widget CTA not found");
+      return;
+    }
+
+    cta.click(); // simulate click on the floating button
+  };
+  
   return (
     <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IndoaXRlIiBmaWxsLW9wYWNpdHk9IjAuMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-30" />
@@ -15,7 +32,8 @@ export default function FinalCTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <button className="group px-10 py-5 bg-white text-slate-900 rounded-xl font-bold text-lg hover:bg-slate-100 transition-all duration-200 shadow-2xl hover:shadow-3xl flex items-center gap-3 w-full sm:w-auto justify-center">
+          
+          <button onClick={handleOpenWidget} className="group px-10 py-5 bg-white text-slate-900 rounded-xl font-bold text-lg hover:bg-slate-100 transition-all duration-200 shadow-2xl hover:shadow-3xl flex items-center gap-3 w-full sm:w-auto justify-center">
             <Play className="w-6 h-6 group-hover:scale-110 transition-transform" />
             Talk to Sefid
           </button>
