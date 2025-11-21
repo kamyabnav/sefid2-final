@@ -12,7 +12,7 @@ export default function Header() {
             <span className="text-2xl font-bold text-slate-900">sefid.ai</span>
           </div>
 
-<a href="/getstarted">
+<a href="/GetStarted">
   <button className="px-6 py-2.5 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">
     Get Started
   </button>
