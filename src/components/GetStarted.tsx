@@ -1,3 +1,6 @@
+/** @jsxImportSource ai-jsx */
+export const route = "/getstarted";
+
 import { useState } from 'react';
 import { Phone, CheckCircle2, Loader2 } from 'lucide-react';
 
