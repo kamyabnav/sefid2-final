@@ -8,7 +8,7 @@ import HowItWorks from './components/HowItWorks';
 import Trust from './components/Trust';
 import About from './components/About';
 import FinalCTA from './components/FinalCTA';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
 
 function App() {
   return (
