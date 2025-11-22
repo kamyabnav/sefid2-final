@@ -50,7 +50,7 @@ export default function GetStarted() {
           </h1>
 
           <p className="text-xl text-slate-600 leading-relaxed">
-            Fill out the form below and we'll get your AI receptionist set up in no time.
+            Fill out the form below and we will contact you shortly.
           </p>
         </div>
 
