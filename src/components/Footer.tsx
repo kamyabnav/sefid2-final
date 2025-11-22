@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 pt-8 text-center text-slate-400 text-sm">
-          <p>&copy; {new Date().getFullYear()} sefid.ai. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} sefid.tech. All rights reserved.</p>
         </div>
       </div>
     </footer>
