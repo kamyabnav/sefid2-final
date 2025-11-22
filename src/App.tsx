@@ -24,8 +24,8 @@ function App() {
             <Hero onGetStartedClick={() => setCurrentPage('getstarted')} />
             <Problem />
             <Solution />
-            <SocialProof />
             <Offer onGetStartedClick={() => setCurrentPage('getstarted')} />
+            <SocialProof />
             <HowItWorks />
             <Trust />
             <About />
