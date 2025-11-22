@@ -20,7 +20,7 @@ phone fast enough. Our goal isn't to replace receptionists, it's to free them fr
 calls so they can focus on what matters: patient care.
           </p>
           <p className="text-xl text-slate-700 leading-relaxed">
-            Our goal isn't to replace staff — it's to <span className="font-semibold text-blue-600">free them from repetitive calls</span> so they can focus on patients.
+            Our goal isn't to replace staff, it's to <span className="font-semibold text-blue-600">free them from repetitive calls</span> so they can focus on patients.
           </p>
         </div>
       </div>
