@@ -1,6 +1,10 @@
 import { Phone, Play } from "lucide-react";
 import { VapiWidget } from "@vapi-ai/client-sdk-react";
 
+interface HeaderProps {
+  onGetStartedClick: () => void;
+}
+
 export default function Hero() {
   const handleOpenWidget = () => {
     // VapiWidget renders this structure:
