@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>hello@sefid.tech</span>
+                <span>info@sefid.tech</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
