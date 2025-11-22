@@ -4,7 +4,7 @@ export default function Problem() {
   const problems = [
     {
       icon: Users,
-      text: "Receptionists get answering the same questions again and again",
+      text: "Receptionists are answering the same questions again and again",
     },
     {
       icon: PhoneOff,
