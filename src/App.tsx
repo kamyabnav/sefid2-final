@@ -22,9 +22,9 @@ function App() {
         <>
           <main className="pt-16">
             <Hero onGetStartedClick={() => setCurrentPage('getstarted')} />
+            <Offer onGetStartedClick={() => setCurrentPage('getstarted')} />
             <Problem />
             <Solution />
-            <Offer onGetStartedClick={() => setCurrentPage('getstarted')} />
             <SocialProof />
             <HowItWorks />
             <Trust />
