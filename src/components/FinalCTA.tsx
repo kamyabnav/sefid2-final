@@ -32,7 +32,7 @@ export default function FinalCTA({ onGetStartedClick }: FinalCTAProps) {
         </h2>
 
         <p className="text-xl sm:text-2xl text-slate-300 mb-12">
-          See how Sefid handles calls in real time or start your 30-day free trial.
+          See how Sefid handles calls in real time or start your free 30-day trial.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
