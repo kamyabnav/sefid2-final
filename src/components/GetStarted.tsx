@@ -8,7 +8,7 @@ export default function GetStarted() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     const form = e.currentTarget;
     const formData = new FormData(form);
 
@@ -45,12 +45,12 @@ export default function GetStarted() {
           <h1 className="text-5xl sm:text-6xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
             Get Started with{' '}
             <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-              Sefid
+              sefid.ai
             </span>
           </h1>
 
           <p className="text-xl text-slate-600 leading-relaxed">
-            Fill out the form below and we'll get in touch with you shortly. No commitment. Cancel anytime during your 30-day trial.
+            Fill out the form below and we'll get your AI receptionist set up in no time.
           </p>
         </div>
 
