@@ -35,7 +35,7 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
             Never Miss Another
             <br />
-            <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent to-cyan-500 bg-clip-text text-transparent">
               Patient Call
             </span>
             <br />
