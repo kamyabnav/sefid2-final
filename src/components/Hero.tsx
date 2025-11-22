@@ -44,6 +44,7 @@ export default function Hero() {
             connects to your existing phone number, no new hardware, no setup
             stress.
           </p>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
             <button className="group px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold text-lg hover:bg-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl flex items-center gap-2 w-full sm:w-auto justify-center">
               <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
