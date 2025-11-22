@@ -45,7 +45,7 @@ export default function Problem() {
 
         <div className="text-center">
           <p className="text-2xl text-slate-600 font-medium">
-            We built a system that takes care of all that — <span className="text-blue-600 font-semibold">instantly</span>.
+            We built a system that takes care of all that, <span className="text-blue-600 font-semibold">instantly</span>.
           </p>
         </div>
       </div>
