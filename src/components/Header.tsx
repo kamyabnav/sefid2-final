@@ -13,7 +13,7 @@ export default function Header({ onGetStartedClick }: HeaderProps) {
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center">
               <Phone className="w-6 h-6 text-white" />
             </div>
-            <span className="text-2xl font-bold text-slate-900">sefid.ai</span>
+            <span className="text-2xl font-bold text-slate-900">Sefid</span>
           </div>
 
           <button onClick={onGetStartedClick} className="px-6 py-2.5 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">
