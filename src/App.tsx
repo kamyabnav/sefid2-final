@@ -21,15 +21,15 @@ function App() {
       {currentPage === 'home' ? (
         <>
           <main className="pt-16">
-            <Hero />
+            <Hero onGetStartedClick={() => setCurrentPage('getstarted')} />
             <Problem />
             <Solution />
             <SocialProof />
-            <Offer />
+            <Offer onGetStartedClick={() => setCurrentPage('getstarted')} />
             <HowItWorks />
             <Trust />
             <About />
-            <FinalCTA />
+            <FinalCTA onGetStartedClick={() => setCurrentPage('getstarted')} />
           </main>
           <Footer />
         </>
