@@ -12,7 +12,7 @@ export default function Header({ onGetStartedClick }: HeaderProps) {
           </div>
 
           <button onClick={onGetStartedClick} className="px-6 py-2.5 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-            Get Started
+            Try it For Free For 30 Days
           </button>
         </div>
       </div>
