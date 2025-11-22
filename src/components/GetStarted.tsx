@@ -8,6 +8,7 @@ export default function GetStarted() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    
     const form = e.currentTarget;
     const formData = new FormData(form);
 
