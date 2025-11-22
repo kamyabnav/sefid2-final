@@ -9,8 +9,8 @@ export default function Solution() {
             Meet Your 24/7 Receptionist
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-4">
-            Your Al receptionist is trained specifically for your clinic - it knows your hours, services,
-insurance policies, and how you like things handled. It can collect key info like name, healthcare
+         Your Al receptionist will be trained specifically for your clinic - it knows your hours, services,
+insurance policies, and how you like things handled. It can collect key patient information like name, healthcare
 number, and insurance details, and store them neatly in your dashboard or CRM.
           </p>
         </div>
