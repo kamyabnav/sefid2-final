@@ -13,7 +13,7 @@ export default function GetStarted() {
     const formData = new FormData(form);
 
     try {
-      await fetch('https://formsubmit.co/kamyabn96@gmail.com', {
+      await fetch('https://formsubmit.co/43fa8532434f0b991af263432ef4f4fe', {
         method: 'POST',
         body: formData,
       });
