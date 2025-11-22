@@ -10,7 +10,7 @@ export default function Footer() {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center">
                 <Phone className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-white">sefid.ai</span>
+              <span className="text-xl font-bold text-white">Sefid</span>
             </div>
             <p className="text-slate-400">
               AI-powered phone receptionist for modern clinics
@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>hello@sefid.ai</span>
+                <span>hello@sefid.tech</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
