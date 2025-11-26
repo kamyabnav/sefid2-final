@@ -1,5 +1,6 @@
 import { Phone, Play } from "lucide-react";
 import { VapiWidget } from "@vapi-ai/client-sdk-react";
+import { useEffect } from "react";
 
 interface HeroProps {
   onGetStartedClick: () => void;
