@@ -120,6 +120,6 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
         mode="voice"
         title="Talk with Sefid"
       />
-    </section>\
+    </section>
   );
 }
