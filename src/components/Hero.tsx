@@ -121,6 +121,25 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
         title="Talk with Sefid"
         size="compact"
       />
+
+      <script>
+  function updateWidgetSize() {
+    const widget = document.getElementById("sefid-widget");
+    if (!widget) return;
+
+    if (window.innerWidth <= 768) { // mobile breakpoint
+      widget.setAttribute("size", "compact");
+    } else {
+      widget.setAttribute("size", "full");
+    }
+  }
+
+  // Run on load
+  window.addEventListener("DOMContentLoaded", updateWidgetSize);
+
+  // Run on resize
+  window.addEventListener("resize", updateWidgetSize);
+</script>
     </section>
   );
 }
