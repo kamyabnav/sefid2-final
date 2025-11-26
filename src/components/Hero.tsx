@@ -114,6 +114,26 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
         </div>
       </div>
 
+
+      export default function Hero() {
+  useEffect(() => {
+    function updateWidgetSize() {
+      const widget = document.getElementById("sefid-widget");
+      if (!widget) return;
+
+      if (window.innerWidth <= 768) { // mobile
+        widget.setAttribute("size", "compact");
+      } else {
+        widget.setAttribute("size", "full");
+      }
+    }
+
+    updateWidgetSize(); // run on load
+    window.addEventListener("resize", updateWidgetSize); // run on resize
+
+    return () => window.removeEventListener("resize", updateWidgetSize); // cleanup
+  }, []);
+
       {/* Vapi widget (React version) */}
       <VapiWidget
         publicKey="0f230ff6-8bb2-435a-bce1-9c2979788a83"
