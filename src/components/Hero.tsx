@@ -121,8 +121,9 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
         title="Talk with Sefid"
         size="compact"
       />
+    </section>
 
-      <script>
+    <script>
   function updateWidgetSize() {
     const widget = document.getElementById("sefid-widget");
     if (!widget) return;
@@ -140,6 +141,5 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
   // Run on resize
   window.addEventListener("resize", updateWidgetSize);
 </script>
-    </section>
   );
 }
