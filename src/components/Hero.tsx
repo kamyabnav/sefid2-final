@@ -6,9 +6,8 @@ interface HeroProps {
   onGetStartedClick: () => void;
 }
 
-
 export default function Hero({ onGetStartedClick }: HeroProps) {
-  const handleOpenWidget = () => {
+const handleOpenWidget = () => {
     // VapiWidget renders this structure:
     // .vapi-widget-wrapper > div (fixed) > div (the clickable CTA)
     const cta = document.querySelector(
@@ -21,27 +20,26 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
     }
 
     cta.click(); // simulate click on the floating button
-    import { useEffect } from "react";
-
-useEffect(() => {
-  const updateWidgetSize = () => {
-    const widget = document.querySelector(".vapi-widget-wrapper") as HTMLElement | null;
-    if (!widget) return;
-
-    if (window.innerWidth <= 768) {
-      widget.setAttribute("data-size", "compact");
-    } else {
-      widget.setAttribute("data-size", "full");
-    }
   };
 
-  updateWidgetSize(); // initial check
-  window.addEventListener("resize", updateWidgetSize);
+  // THIS GOES HERE, STILL INSIDE Hero, BUT OUTSIDE handleOpenWidget
+  useEffect(() => {
+    const updateWidgetSize = () => {
+      const widget = document.querySelector(".vapi-widget-wrapper") as HTMLElement | null;
+      if (!widget) return;
 
-  return () => window.removeEventListener("resize", updateWidgetSize);
-}, []);
+      if (window.innerWidth <= 768) {
+        widget.setAttribute("data-size", "compact");
+      } else {
+        widget.setAttribute("data-size", "full");
+      }
+    };
 
-  };
+    updateWidgetSize(); // initial check
+    window.addEventListener("resize", updateWidgetSize);
+
+    return () => window.removeEventListener("resize", updateWidgetSize);
+  }, []);
 
   return (
     <section className="relative bg-gradient-to-br from-slate-50 to-blue-50 overflow-hidden">
@@ -135,8 +133,6 @@ useEffect(() => {
         </div>
       </div>
 
-
-      
       {/* Vapi widget (React version) */}
       <VapiWidget
         publicKey="0f230ff6-8bb2-435a-bce1-9c2979788a83"
