@@ -121,6 +121,6 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
         title="Talk with Sefid"
         size="compact"
       />
-    </section>]
+    </section>
   );
 }
