@@ -139,7 +139,7 @@ const handleOpenWidget = () => {
         assistantId="e14476a7-2ac3-4ac5-9bad-aa947947fbc7"
         mode="voice"
         title="Talk with Sefid"
-        size="full"
+        size="compact"
       />
     </section>
   );
