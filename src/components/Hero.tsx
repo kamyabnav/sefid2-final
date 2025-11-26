@@ -22,25 +22,6 @@ const handleOpenWidget = () => {
     cta.click(); // simulate click on the floating button
   };
 
-  // THIS GOES HERE, STILL INSIDE Hero, BUT OUTSIDE handleOpenWidget
-  useEffect(() => {
-    const updateWidgetSize = () => {
-      const widget = document.querySelector(".vapi-widget-wrapper") as HTMLElement | null;
-      if (!widget) return;
-
-      if (window.innerWidth <= 768) {
-        widget.setAttribute("data-size", "compact");
-      } else {
-        widget.setAttribute("data-size", "full");
-      }
-    };
-
-    updateWidgetSize(); // initial check
-    window.addEventListener("resize", updateWidgetSize);
-
-    return () => window.removeEventListener("resize", updateWidgetSize);
-  }, []);
-
   return (
     <section className="relative bg-gradient-to-br from-slate-50 to-blue-50 overflow-hidden">
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10" />
