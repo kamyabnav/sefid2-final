@@ -114,14 +114,12 @@ export default function Hero({ onGetStartedClick }: HeroProps) {
       </div>
 
       {/* Vapi widget (React version) */}
-      <div className="vapi-container">
       <VapiWidget
         publicKey="0f230ff6-8bb2-435a-bce1-9c2979788a83"
         assistantId="e14476a7-2ac3-4ac5-9bad-aa947947fbc7"
         mode="voice"
         title="Talk with Sefid"
       />
-        </div>
-    </section>
+    </section>\
   );
 }
